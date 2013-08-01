@@ -7,5 +7,5 @@ You need environment variable HALIDE_DIR to point to the base of Halide director
 ***
 ## TODO
 
-- [ ] Create template app source/main
-- [ ] Create separate JIT, static test templates
+- [x] Create template app source/main
+- [ ] Create separate static test template
