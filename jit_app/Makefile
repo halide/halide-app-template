@@ -4,7 +4,7 @@ RM=rm -f
 
 BIN_DIR=../bin
 
-APP_NAME=my_app
+APP_NAME=jit_app
 
 EXE=$(BIN_DIR)/$(APP_NAME)
 
