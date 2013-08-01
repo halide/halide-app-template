@@ -1,4 +1,4 @@
-CXX=g++
+CXX ?= g++
 MKDIR=mkdir -p
 RM=rm -f
 
@@ -18,7 +18,7 @@ all: $(OBJ) $(EXE)
 
 _build/%.o: %.cpp
 	@$(MKDIR) _build
-	$(CXX) -c $< -o $@ -I$(HALIDE_DIR)/include/ -I../
+	$(CXX) -c $< -o $@ -I$(HALIDE_DIR)/include/ -I../ # we can include stuff from up one level, by default
 
 $(EXE): $(OBJ) $(HALIDE_LIB)
 	@$(MKDIR) $(BIN_DIR)
